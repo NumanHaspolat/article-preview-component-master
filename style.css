@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* - Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px */
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.container {
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  border-radius: 0.7rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.left-img {
+  border-top-left-radius: 0.7rem;
+  border-bottom-left-radius: 0.7rem;
+  width: 300px;
+}
+
+.right-div {
+  padding: 1.3rem 2rem;
+}
+
+.title {
+  color: hsl(217, 19%, 35%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.par {
+  color: hsl(214, 17%, 51%);
+  margin-bottom: 0.7rem;
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.name-surname {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.date {
+  color: hsl(214, 17%, 51%);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.share-div {
+  margin-left: 13rem;
+}
+
+.share-icon {
+  background-color: hsl(210, 46%, 95%);
+  padding: 0.8rem 0.75rem;
+  border-radius: 50%;
+}
+
+.share-icon:hover{
+  cursor: pointer;
+}
+
+.click {
+  background-color: hsl(214, 17%, 11%);
+  color: white;
+  padding: 0.8rem 0.75rem;
+  border-radius: 50%;
+}
+
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  background: hsl(217, 19%, 35%);
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 37px;
+  text-align: center;
+  width: 277px;
+  height: 53px;
+  border-radius: 11px;
+  padding: 6px;
+  left: 611px;
+  bottom: 110px;
+
+}
+.bubble:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  z-index: 1;
+  border-style: solid;
+  border-color: hsl(217, 19%, 35%) transparent;
+  border-width: 20px 20px 0;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.icon {
+  transition: 0.3s;
+}
+
+.icon:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.hidden {
+  display: none;
+}
+
+.share-title {
+  color: hsl(210, 46%, 95%);
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 0.4rem;
+}
